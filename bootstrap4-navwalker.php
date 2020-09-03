@@ -188,7 +188,7 @@ if (class_exists('\Walker_Nav_Menu')) {
                 $atts['target'] = ! empty($item->target) ? $item->target : '';
                 $atts['rel']    = ! empty($item->xfn) ? $item->xfn : '';
                 // If the item has children, add atts to the <a>.
-                if (isset($args->has_children) && $args->has_children && 0 === $depth && $args->depth > 1) {
+                if (isset($args->has_children) && $args->has_children && 0 === $depth) {
                     $atts['href']          = '#';
                     $atts['data-toggle']   = 'dropdown';
                     $atts['aria-haspopup'] = 'true';
